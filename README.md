@@ -9,8 +9,9 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
   front matter con `layout: null` e incluye el código existente de AdSense desde
   `_includes/head-custom.html`.
 - `assets/xanders/site.css`: diseño adaptable, azul medianoche y acento lima,
-  navegación por teclado y `prefers-reduced-motion`. Añade entrada escalonada de la
-  portada, brillo/órbita lentos, detalles al desplazarse y respuestas breves al hover.
+  titulares editoriales en Georgia, cuerpo en fuentes del sistema, navegación por
+  teclado y `prefers-reduced-motion`. La animación se concentra en la entrada de la
+  portada y el símbolo de marca.
 - `assets/xanders/`: logotipo vectorial, favicon y dos imágenes WebP.
 - `cotizame/privacidad/index.html`: política de la app, mantenida por separado.
 - `googleeb36ee55bdb6964e.html`: archivo de propiedad de Search Console.
