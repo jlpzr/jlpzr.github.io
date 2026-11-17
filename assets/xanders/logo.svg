@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8.7 9.5 91.8 56.5" role="img" aria-labelledby="titulo">
+  <title id="titulo">Xanders</title>
+  <g fill="#FFFFFF">
+    <path d="M26 26.8L29 29.8L20.7 38.1L29 46.4L26 49.4L14.7 38.1Z"/>
+    <path d="M29 60L60 15.5H66L35 60Z"/>
+    <path d="M29 15.5H35L45 29.85L42 34.16Z M49.96 45.6L52.97 41.28L66 60H60Z"/>
+    <path d="M69 26.8L66 29.8L74.3 38.1L66 46.4L69 49.4L80.3 38.1Z"/>
+    <rect x="82.5" y="56" width="12" height="4"/>
+  </g>
+</svg>
