@@ -1,231 +1,101 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cotizame procesa tu información en este dispositivo. Conoce cómo se guardan y protegen tus datos, exportaciones y respaldos.">
-    <meta name="theme-color" content="#f7f8fc">
+    <meta name="theme-color" content="#070c1c">
     <link rel="canonical" href="https://xanders.me/cotizame/privacidad/">
-    <title>Política de Privacidad — Cotizame | Xanders</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #19233b;
-        background: #f7f8fc;
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-width: 320px;
-        line-height: 1.7;
-      }
-
-      .page {
-        width: min(100% - 32px, 800px);
-        margin: 0 auto;
-        padding: 40px 0 64px;
-      }
-
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 36px;
-        color: #263b77;
-        font-size: 0.94rem;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-      }
-
-      .policy-directory-link {
-        display: inline-flex;
-        margin: -18px 0 26px;
-        color: #304f9b;
-        font-size: 0.9rem;
-        text-underline-offset: 3px;
-      }
-
-      .policy-directory-link:focus-visible {
-        outline: 3px solid #91aaf0;
-        outline-offset: 3px;
-        border-radius: 2px;
-      }
-
-      .brand-mark {
-        display: grid;
-        width: 34px;
-        height: 34px;
-        place-items: center;
-        border-radius: 11px;
-        background: #263b77;
-        color: white;
-        font-size: 0.85rem;
-      }
-
-      main {
-        padding: clamp(24px, 6vw, 52px);
-        border: 1px solid #e4e8f1;
-        border-radius: 24px;
-        background: #fff;
-        box-shadow: 0 16px 48px rgb(28 43 82 / 6%);
-      }
-
-      .eyebrow {
-        margin: 0 0 8px;
-        color: #536aa7;
-        font-size: 0.78rem;
-        font-weight: 750;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        color: #17264e;
-        font-size: clamp(2rem, 6vw, 3rem);
-        letter-spacing: -0.045em;
-        line-height: 1.15;
-      }
-
-      .summary {
-        margin: 28px 0 36px;
-        padding: 20px 22px;
-        border: 1px solid #dce5fb;
-        border-radius: 16px;
-        background: #f3f6ff;
-        color: #283b70;
-      }
-
-      section { margin-top: 30px; }
-
-      h2 {
-        margin: 0 0 8px;
-        color: #1e315f;
-        font-size: 1.14rem;
-        letter-spacing: -0.015em;
-        line-height: 1.4;
-      }
-
-      p { margin: 0 0 12px; }
-
-      a {
-        color: #304f9b;
-        overflow-wrap: anywhere;
-        text-underline-offset: 3px;
-      }
-
-      a:focus-visible {
-        outline: 3px solid #91aaf0;
-        outline-offset: 3px;
-        border-radius: 2px;
-      }
-
-      .updated {
-        margin: 38px 0 0;
-        padding-top: 20px;
-        border-top: 1px solid #e8ebf2;
-        color: #64708a;
-        font-size: 0.9rem;
-        text-align: center;
-      }
-
-      footer {
-        padding-top: 22px;
-        color: #69748b;
-        font-size: 0.86rem;
-        text-align: center;
-      }
-
-      @media (max-width: 520px) {
-        .page { width: min(100% - 20px, 800px); padding: 22px 0 36px; }
-        .brand { margin: 0 0 20px 6px; }
-        main { padding: 24px 20px 30px; border-radius: 18px; }
-        .summary { padding: 16px; }
-      }
-
-      @media print {
-        :root { background: white; color: black; }
-        .page { width: 100%; padding: 0; }
-        .brand, footer { display: none; }
-        main { padding: 0; border: 0; border-radius: 0; box-shadow: none; }
-        .summary { background: white; }
-        a { color: inherit; }
-      }
-    </style>
+    <link rel="icon" href="/assets/xanders/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/xanders/site.css?v=4">
+    <title>Política de privacidad — Cotizame | Xanders</title>
   </head>
-  <body>
-    <div class="page">
-      <a class="brand" href="https://xanders.me/" aria-label="Xanders, página principal">
-        <span class="brand-mark" aria-hidden="true">X</span>
-        <span>Xanders · Cotizame</span>
+  <body id="inicio">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header wrap">
+      <a class="brand" href="/#inicio" aria-label="Xanders, inicio">
+        <img src="/assets/xanders/logo.svg" width="60" height="37" alt="">
+        <span>Xanders<span class="brand-dot">.</span></span>
       </a>
-      <a class="policy-directory-link" href="/privacidad/">Ver todas las políticas de privacidad</a>
+      <nav aria-label="Navegación principal">
+        <a href="/#aplicaciones">Aplicaciones</a>
+        <a href="/#nosotros">Sobre Xanders</a>
+        <a href="/privacidad/">Privacidad</a>
+        <a class="nav-contact" href="/#contacto">Hablemos</a>
+      </nav>
+    </header>
 
-      <main>
-        <header>
-          <p class="eyebrow">Cotizame</p>
-          <h1>Política de Privacidad</h1>
-          <p class="summary">Cotizame procesa tu información en el dispositivo. Si exportas o compartes archivos, o Android realiza una copia del sistema, la información puede salir del control directo de la app.</p>
-        </header>
+    <main class="policy-page section wrap" id="contenido" tabindex="-1">
+      <a class="policy-back-link" href="/privacidad/">← Todas las políticas de privacidad</a>
 
-        <section>
-          <h2>Responsable y contacto</h2>
+      <header class="policy-header" aria-labelledby="policy-title">
+        <p class="eyebrow">Cotizame · Android</p>
+        <h1 id="policy-title">Política de privacidad</h1>
+        <p class="policy-summary">Cotizame procesa tu información en el dispositivo. Si exportas o compartes archivos, o Android realiza una copia del sistema, la información puede salir del control directo de la app.</p>
+      </header>
+
+      <div class="policy-document">
+        <section class="policy-section" aria-labelledby="responsable-title">
+          <h2 id="responsable-title">Responsable y contacto</h2>
           <p>La organización responsable de Cotizame es Xanders, que opera en Nicaragua. Para consultas sobre esta política o privacidad, escribe a:</p>
           <p><a href="mailto:soporte.xanders@gmail.com">soporte.xanders@gmail.com</a></p>
         </section>
 
-        <section>
-          <h2>Información que puedes guardar</h2>
+        <section class="policy-section" aria-labelledby="informacion-title">
+          <h2 id="informacion-title">Información que puedes guardar</h2>
           <p>Según cómo uses la aplicación, puedes guardar datos de tu empresa (nombre, identificación comercial, dirección, teléfono, correo y logo); productos (códigos, nombres, descripciones, precios y fotos); clientes y vendedores (nombres e información de contacto); y cotizaciones (copias de esos datos, partidas, cantidades, precios, descuentos, impuestos, totales, números y fechas). También se guardan preferencias necesarias para el funcionamiento y la presentación de la app.</p>
         </section>
 
-        <section>
-          <h2>Uso y almacenamiento</h2>
+        <section class="policy-section" aria-labelledby="uso-title">
+          <h2 id="uso-title">Uso y almacenamiento</h2>
           <p>Cotizame usa esa información en el dispositivo para administrar catálogos, preparar y consultar cotizaciones, generar archivos y crear o restaurar respaldos solicitados por ti. Los datos de negocio se guardan en la base local y en preferencias de la aplicación; no necesitas crear una cuenta.</p>
         </section>
 
-        <section>
-          <h2>Conexiones y servicios externos</h2>
+        <section class="policy-section" aria-labelledby="conexiones-title">
+          <h2 id="conexiones-title">Conexiones y servicios externos</h2>
           <p>La versión release actual no declara el permiso de Internet ni incorpora sincronización en la nube, publicidad o analítica remota. La app no envía tu base de datos a Xanders. Si eliges exportar o compartir un archivo, o si Android realiza una copia del dispositivo, la información puede pasar a servicios que tú o el sistema seleccionen; esos servicios tienen sus propias prácticas de privacidad.</p>
         </section>
 
-        <section>
-          <h2>Protección de la información</h2>
+        <section class="policy-section" aria-labelledby="proteccion-title">
+          <h2 id="proteccion-title">Protección de la información</h2>
           <p>La base SQLite local no tiene cifrado propio de Cotizame. Su protección depende del aislamiento de aplicaciones y de las medidas de seguridad de Android y del dispositivo, como el bloqueo de pantalla. Ninguna protección debe considerarse absoluta, especialmente si el dispositivo está desbloqueado, comprometido o compartido.</p>
         </section>
 
-        <section>
-          <h2>PDF, CSV y archivos compartidos</h2>
+        <section class="policy-section" aria-labelledby="archivos-title">
+          <h2 id="archivos-title">PDF, CSV y archivos compartidos</h2>
           <p>Puedes guardar o compartir cotizaciones PDF y exportar catálogos CSV mediante las opciones del sistema Android. Cotizame no cifra esos PDF o CSV. Una vez que los guardas en otra ubicación o los entregas a otra aplicación o persona, su acceso y protección dependen del destino y de quien los reciba.</p>
         </section>
 
-        <section>
-          <h2>Respaldos</h2>
+        <section class="policy-section" aria-labelledby="respaldos-title">
+          <h2 id="respaldos-title">Respaldos</h2>
           <p>El respaldo manual que ofrece Cotizame se cifra con Argon2id y AES-256-GCM usando una contraseña que eliges y que debe tener al menos 12 caracteres. Cotizame no guarda esa contraseña y no puede recuperarla; si la pierdes, no podrás abrir el respaldo. Guarda el archivo y la contraseña de forma segura y por separado. Además, Android puede incluir datos de la app en copias del sistema o transferencias de dispositivo según su versión y configuración. Cotizame no controla esos procesos; revisa los ajustes de copia de seguridad de Android.</p>
         </section>
 
-        <section>
-          <h2>Conservación y eliminación</h2>
+        <section class="policy-section" aria-labelledby="conservacion-title">
+          <h2 id="conservacion-title">Conservación y eliminación</h2>
           <p>Los datos permanecen en el dispositivo mientras estén guardados en la app. Puedes eliminar borradores y archivar registros de catálogos; archivar no equivale a borrarlos. Las cotizaciones finalizadas se conservan como registros inmutables. Para borrar los datos locales de Cotizame, usa los ajustes de almacenamiento de Android o desinstala la app. Esto no elimina PDF, CSV ni respaldos guardados fuera de la app, y Android podría restaurar datos desde una copia del sistema según su configuración.</p>
         </section>
 
-        <section>
-          <h2>Cambios a esta política</h2>
+        <section class="policy-section" aria-labelledby="cambios-title">
+          <h2 id="cambios-title">Cambios a esta política</h2>
           <p>Si cambian las funciones o las prácticas de datos de Cotizame, esta política podrá actualizarse. La fecha indicada al final identifica la versión vigente dentro de la app.</p>
         </section>
 
-        <p class="updated">Última actualización: 15 de noviembre de 2026</p>
-      </main>
+        <p class="policy-updated">Última actualización: 15 de noviembre de 2026</p>
+      </div>
+    </main>
 
-      <footer>© Xanders · Cotizame</footer>
-    </div>
+    <footer class="site-footer wrap">
+      <a class="brand footer-brand" href="/#inicio" aria-label="Xanders, volver al inicio">
+        <img src="/assets/xanders/logo.svg" width="48" height="30" alt="">
+        <span>Xanders<span class="brand-dot">.</span></span>
+      </a>
+      <span class="footer-note">© 2026 Xanders. Hecho en Nicaragua.</span>
+      <a class="footer-privacy" href="/privacidad/">Políticas de privacidad</a>
+    </footer>
   </body>
 </html>

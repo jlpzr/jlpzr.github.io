@@ -10,3 +10,5 @@ generado y no forma parte de las páginas publicadas.
 - Se creó este registro de cambios para documentar futuras modificaciones.
 - Se añadió `/privacidad/` como índice de políticas, enlazado desde la navegación
   y con la política actual de Cotizame.
+- Se unificó el diseño de la política de Cotizame con la identidad visual y la
+  navegación de Xanders.
