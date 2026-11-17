@@ -13,7 +13,9 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
   teclado y `prefers-reduced-motion`. La animación se concentra en la entrada de la
   portada y el símbolo de marca.
 - `assets/xanders/`: logotipo vectorial, favicon y dos imágenes WebP.
-- `cotizame/privacidad/index.html`: política de la app, mantenida por separado.
+- `privacidad/index.html`: índice de políticas de privacidad de las aplicaciones.
+- `cotizame/privacidad/index.html`: política de privacidad de Cotizame.
+- `CHANGELOG.md`: registro interno de cambios, excluido de la salida de Jekyll por `_config.yml`.
 - `googleeb36ee55bdb6964e.html`: archivo de propiedad de Search Console.
 - `CNAME`: dominio `xanders.me`.
 
