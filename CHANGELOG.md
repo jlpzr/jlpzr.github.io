@@ -12,3 +12,9 @@ generado y no forma parte de las páginas publicadas.
   y con la política actual de Cotizame.
 - Se unificó el diseño de la política de Cotizame con la identidad visual y la
   navegación de Xanders.
+
+## 2026-11-18
+
+- Se añadió una animación progresiva de escritura en consola al titular principal
+  de la portada. El texto completo permanece visible sin JavaScript y la animación
+  se desactiva con movimiento reducido.

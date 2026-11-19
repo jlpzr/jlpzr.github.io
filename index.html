@@ -16,7 +16,7 @@ layout: null
     <meta property="og:url" content="https://xanders.me/">
     <link rel="canonical" href="https://xanders.me/">
     <link rel="icon" href="/assets/xanders/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/xanders/site.css?v=4">
+    <link rel="stylesheet" href="/assets/xanders/site.css?v=5">
     <title>Xanders — Ideas que toman forma de app</title>
     {% include head-custom.html %}
   </head>
@@ -130,6 +130,50 @@ layout: null
         </div>
       </section>
     </main>
+
+    <script>
+      (function () {
+        var heading = document.getElementById("hero-title");
+        var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (!heading || reducedMotion || !CSS.supports("animation-timeline: view()")) {
+          return;
+        }
+
+        var lines = ["Ideas que toman", "forma de app."];
+        var typedHeading = lines.reduce(function (container, line, lineIndex) {
+          var typedLine = document.createElement("span");
+
+          typedLine.className = "typed-line";
+          typedLine.setAttribute("aria-hidden", "true");
+
+          Array.from(line).forEach(function (character, characterIndex) {
+            var characterSpan = document.createElement("span");
+            characterSpan.textContent = character === " " ? "\u00a0" : character;
+            characterSpan.className = "typed-character";
+            characterSpan.style.setProperty("--character-index", characterIndex);
+            typedLine.appendChild(characterSpan);
+          });
+
+          container.appendChild(typedLine);
+
+          if (lineIndex < lines.length - 1) {
+            container.appendChild(document.createElement("br"));
+          }
+
+          return container;
+        }, document.createDocumentFragment());
+
+        heading.textContent = "";
+        heading.classList.add("typing");
+        heading.appendChild(typedHeading);
+
+        var cursor = document.createElement("span");
+        cursor.className = "console-caret";
+        cursor.setAttribute("aria-hidden", "true");
+        heading.appendChild(cursor);
+      }());
+    </script>
 
     <footer class="site-footer wrap">
       <a class="brand footer-brand" href="#inicio" aria-label="Xanders, volver al inicio">

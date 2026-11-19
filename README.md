@@ -11,7 +11,7 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
 - `assets/xanders/site.css`: diseño adaptable, azul medianoche y acento lima,
   titulares editoriales en Georgia, cuerpo en fuentes del sistema, navegación por
   teclado y `prefers-reduced-motion`. La animación se concentra en la entrada de la
-  portada y el símbolo de marca.
+  portada, el símbolo de marca y el titular de escritura progresiva.
 - `assets/xanders/`: logotipo vectorial, favicon y dos imágenes WebP.
 - `privacidad/index.html`: índice de políticas de privacidad de las aplicaciones.
 - `cotizame/privacidad/index.html`: política de privacidad de Cotizame.
@@ -19,8 +19,9 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
 - `googleeb36ee55bdb6964e.html`: archivo de propiedad de Search Console.
 - `CNAME`: dominio `xanders.me`.
 
-La landing no requiere JavaScript propio, frameworks, fuentes remotas ni un build
-de Node. Los cambios se publican al hacer push a `main`; la verificación definitiva
+La landing no requiere frameworks, fuentes remotas ni un build de Node. El titular
+usa un pequeño script progresivo para animar su escritura; sin JavaScript se muestra
+completo. Los cambios se publican al hacer push a `main`; la verificación definitiva
 es el despliegue de Pages y el HTML servido en el dominio.
 
 ## Contenido y recursos confirmados
