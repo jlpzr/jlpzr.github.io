@@ -20,4 +20,5 @@ generado y no forma parte de las páginas publicadas.
   completo permanece visible sin JavaScript y la animación se desactiva con
   movimiento reducido.
 - Se ajustó el cursor del titular para que avance con cada letra en lugar de
-  quedar fijo en la primera posición.
+  quedar fijo en la primera posición. Queda a la derecha de la letra recién
+  escrita y simula el cursor de un editor durante la entrada.

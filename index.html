@@ -165,6 +165,10 @@ layout: null
         heading.appendChild(cursor);
 
         var lineElements = Array.from(heading.querySelectorAll(".typed-line"));
+        lineElements.forEach(function (lineElement) {
+          lineElement.appendChild(cursor);
+        });
+
         var characterIndex = 0;
 
         function typeCharacter() {
