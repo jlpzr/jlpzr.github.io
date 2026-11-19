@@ -15,6 +15,7 @@ generado y no forma parte de las páginas publicadas.
 
 ## 2026-11-18
 
-- Se añadió una animación progresiva de escritura en consola al titular principal
-  de la portada. El texto completo permanece visible sin JavaScript y la animación
-  se desactiva con movimiento reducido.
+- Se añadió una animación de escritura letra por letra al titular principal. Una
+  línea guion bajo parpadea mientras cada línea está en progreso y desaparece al
+  terminar. El texto completo permanece visible sin JavaScript y la animación se
+  desactiva con movimiento reducido.

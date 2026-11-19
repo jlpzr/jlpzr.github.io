@@ -146,6 +146,7 @@ layout: null
 
           typedLine.className = "typed-line";
           typedLine.setAttribute("aria-hidden", "true");
+          typedLine.classList.add("typing-line");
 
           Array.from(line).forEach(function (character, characterIndex) {
             var characterSpan = document.createElement("span");
@@ -168,10 +169,7 @@ layout: null
         heading.classList.add("typing");
         heading.appendChild(typedHeading);
 
-        var cursor = document.createElement("span");
-        cursor.className = "console-caret";
-        cursor.setAttribute("aria-hidden", "true");
-        heading.appendChild(cursor);
+
       }());
     </script>
 
