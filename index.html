@@ -136,38 +136,55 @@ layout: null
         var heading = document.getElementById("hero-title");
         var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-        if (!heading || reducedMotion || !CSS.supports("animation-timeline: view()")) {
+        if (!heading || reducedMotion || typeof window.setTimeout !== "function") {
           return;
         }
 
         var lines = ["Ideas que toman", "forma de app."];
-        var typedHeading = lines.reduce(function (container, line, lineIndex) {
+        var typedHeading = document.createDocumentFragment();
+
+        lines.forEach(function (line, lineIndex) {
           var typedLine = document.createElement("span");
 
           typedLine.className = "typed-line";
           typedLine.setAttribute("aria-hidden", "true");
-          typedLine.classList.add("typing-line");
-
-          Array.from(line).forEach(function (character, characterIndex) {
-            var characterSpan = document.createElement("span");
-            characterSpan.textContent = character === " " ? "\u00a0" : character;
-            characterSpan.className = "typed-character";
-            characterSpan.style.setProperty("--character-index", characterIndex);
-            typedLine.appendChild(characterSpan);
-          });
-
-          container.appendChild(typedLine);
+          typedHeading.appendChild(typedLine);
 
           if (lineIndex < lines.length - 1) {
-            container.appendChild(document.createElement("br"));
+            typedHeading.appendChild(document.createElement("br"));
           }
-
-          return container;
-        }, document.createDocumentFragment());
+        });
 
         heading.textContent = "";
         heading.classList.add("typing");
         heading.appendChild(typedHeading);
+
+        var cursor = document.createElement("span");
+        cursor.className = "console-caret";
+        cursor.setAttribute("aria-hidden", "true");
+        heading.appendChild(cursor);
+
+        var lineElements = Array.from(heading.querySelectorAll(".typed-line"));
+        var characterIndex = 0;
+
+        function typeCharacter() {
+          if (characterIndex >= lines.join("").length) {
+            cursor.classList.add("typing-finished");
+            return;
+          }
+
+          var lineIndex = characterIndex < lines[0].length ? 0 : 1;
+          var localIndex = lineIndex === 0 ? characterIndex : characterIndex - lines[0].length;
+          var characterSpan = document.createElement("span");
+          characterSpan.textContent = lines[lineIndex][localIndex] === " " ? "\u00a0" : lines[lineIndex][localIndex];
+          characterSpan.className = "typed-character";
+          lineElements[lineIndex].appendChild(characterSpan);
+
+          characterIndex += 1;
+          window.setTimeout(typeCharacter, 72);
+        }
+
+        window.setTimeout(typeCharacter, 420);
 
 
       }());
