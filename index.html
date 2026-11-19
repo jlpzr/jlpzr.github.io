@@ -179,6 +179,7 @@ layout: null
           characterSpan.textContent = lines[lineIndex][localIndex] === " " ? "\u00a0" : lines[lineIndex][localIndex];
           characterSpan.className = "typed-character";
           lineElements[lineIndex].appendChild(characterSpan);
+          lineElements[lineIndex].appendChild(cursor);
 
           characterIndex += 1;
           window.setTimeout(typeCharacter, 72);
