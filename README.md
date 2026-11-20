@@ -32,7 +32,7 @@ es el despliegue de Pages y el HTML servido en el dominio.
 - Captura: `normal-app-api29.png`, evidencia de aceptación de Cotizame del
   8 de noviembre de 2026 en Android/API 29. Contiene exclusivamente datos de prueba;
   se conserva completa, incluido el indicador de desarrollo. WebP a 576 × 1280 px.
-- Contacto: `soporte.xanders@gmail.com` y [Facebook](https://www.facebook.com/people/Xanders/61596795898686/).
+- Contacto: `soporte.xanders@gmail.com`, [Facebook](https://www.facebook.com/people/Xanders/61596795898686/) e [Instagram](https://www.instagram.com/xanders.dev?bqrl=MXVsdHpmZmh3aDY3ag==).
 - Cotizame se presenta en desarrollo. No hay una URL confirmada de la ficha ni de
   la página de desarrollador en Google Play. Añadirlas cuando estén disponibles;
   no construir enlaces a partir del nombre o del identificador del paquete.

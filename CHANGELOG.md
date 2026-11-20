@@ -26,3 +26,4 @@ generado y no forma parte de las páginas publicadas.
 ## 2026-11-19
 
 - Se agregó el enlace oficial de Facebook al bloque de contacto de la portada.
+- Se agregó el enlace oficial de Instagram junto al de Facebook.
