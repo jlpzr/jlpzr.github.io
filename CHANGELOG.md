@@ -22,3 +22,7 @@ generado y no forma parte de las páginas publicadas.
 - Se ajustó el cursor del titular para que avance con cada letra en lugar de
   quedar fijo en la primera posición. Queda a la derecha de la letra recién
   escrita y simula el cursor de un editor durante la entrada.
+
+## 2026-11-19
+
+- Se agregó el enlace oficial de Facebook al bloque de contacto de la portada.
