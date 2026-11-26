@@ -7,7 +7,7 @@ layout: null
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#070c1c">
-    <meta name="description" content="Xanders desarrolla aplicaciones para hacer más simple lo cotidiano. Descubre Cotizame, nuestra app de cotizaciones para Android en desarrollo.">
+    <meta name="description" content="Xanders desarrolla aplicaciones para hacer más simple lo cotidiano. Descubre Cotizame y Empleame CV, nuestras apps en desarrollo.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_NI">
     <meta property="og:site_name" content="Xanders">
@@ -66,38 +66,137 @@ layout: null
             <p class="eyebrow">Aplicaciones</p>
             <h2 id="apps-title">Menos vueltas.<br>Más posibilidades.</h2>
           </div>
-          <p>Empezamos por una tarea concreta:<br class="desktop-break"> ayudar a los negocios a cotizar.</p>
+          <p>Aplicaciones pensadas para resolver<br class="desktop-break"> tareas concretas, sin complicaciones.</p>
         </div>
 
-        <article class="app-card" aria-labelledby="cotizame-title">
-          <div class="app-copy">
-            <div class="app-heading">
-              <img class="app-icon" src="/assets/xanders/cotizame-icon.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
-              <div>
-                <p class="app-platform">Herramientas para negocios en Android</p>
-                <h3 id="cotizame-title">Cotizame</h3>
-              </div>
+        <div class="apps-carousel" id="apps-carousel" aria-roledescription="carrusel" aria-label="Aplicaciones de Xanders">
+          <div class="carousel-toolbar" hidden>
+            <div class="carousel-tabs" role="tablist" aria-label="Seleccionar aplicación">
+              <button type="button" class="carousel-tab is-active" role="tab" id="tab-cotizame" aria-selected="true" aria-controls="slide-cotizame" data-slide="0">
+                <img src="/assets/xanders/cotizame-icon.webp" width="22" height="22" alt="" aria-hidden="true">
+                <span>Cotizame</span>
+              </button>
+              <button type="button" class="carousel-tab" role="tab" id="tab-empleame" aria-selected="false" aria-controls="slide-empleame" tabindex="-1" data-slide="1">
+                <img src="/assets/xanders/empleame-icon.png" width="22" height="22" alt="" aria-hidden="true">
+                <span>Empleame CV</span>
+              </button>
             </div>
-            <p class="status"><span aria-hidden="true"></span> En desarrollo</p>
-            <h4>Tus cotizaciones,<br>a tu manera.</h4>
-            <p class="app-description">Organiza productos y clientes, prepara cotizaciones y genera sus PDF desde tu teléfono. Trabaja sin conexión y lleva el historial de tu negocio contigo.</p>
-            <ul class="app-features">
-              <li><span aria-hidden="true"></span> Crea y guarda cotizaciones en PDF</li>
-              <li><span aria-hidden="true"></span> Reutiliza tus catálogos de productos y clientes</li>
-              <li><span aria-hidden="true"></span> Protege tus respaldos con contraseña</li>
-            </ul>
-            <p class="availability">Estamos preparando su publicación. Aquí encontrarás el enlace a Google Play cuando esté disponible.</p>
-            <a class="text-link" href="/cotizame/privacidad/">Privacidad de Cotizame</a>
+            <div class="carousel-arrows">
+              <button type="button" class="carousel-arrow" id="carousel-prev" aria-label="Aplicación anterior">
+                <span aria-hidden="true">←</span>
+              </button>
+              <span class="carousel-counter" id="carousel-counter" aria-live="polite">1 / 2</span>
+              <button type="button" class="carousel-arrow" id="carousel-next" aria-label="Siguiente aplicación">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
           </div>
 
-          <figure class="app-preview">
-            <div class="preview-grid" aria-hidden="true"></div>
-            <div class="phone-frame">
-              <img src="/assets/xanders/cotizame-screen.webp" width="576" height="1280" alt="Pantalla real de Cotizame: búsqueda y filtros de cotizaciones, dos cotizaciones finalizadas con datos de prueba y el botón Nueva cotización." loading="lazy" decoding="async">
+          <div class="apps-viewport">
+            <div class="apps-track" id="apps-track">
+              <article class="app-card" id="slide-cotizame" role="tabpanel" aria-labelledby="cotizame-title">
+                <div class="app-copy">
+                  <div class="app-heading">
+                    <img class="app-icon" src="/assets/xanders/cotizame-icon.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
+                    <div>
+                      <p class="app-platform">Herramientas para negocios en Android</p>
+                      <h3 id="cotizame-title">Cotizame</h3>
+                    </div>
+                  </div>
+                  <p class="status"><span aria-hidden="true"></span> En desarrollo</p>
+                  <h4>Tus cotizaciones,<br>a tu manera.</h4>
+                  <p class="app-description">Organiza productos y clientes, prepara cotizaciones y genera sus PDF desde tu teléfono. Trabaja sin conexión y lleva el historial de tu negocio contigo.</p>
+                  <ul class="app-features">
+                    <li><span aria-hidden="true"></span> Crea y guarda cotizaciones en PDF</li>
+                    <li><span aria-hidden="true"></span> Reutiliza tus catálogos de productos y clientes</li>
+                    <li><span aria-hidden="true"></span> Protege tus respaldos con contraseña</li>
+                  </ul>
+                  <p class="availability">Estamos preparando su publicación. Aquí encontrarás el enlace a Google Play cuando esté disponible.</p>
+                  <a class="text-link" href="/cotizame/privacidad/">Privacidad de Cotizame</a>
+                </div>
+
+                <figure class="app-preview">
+                  <div class="preview-grid" aria-hidden="true"></div>
+                  <div class="phone-frame">
+                    <img src="/assets/xanders/cotizame-screen.webp" width="576" height="1280" alt="Pantalla real de Cotizame: búsqueda y filtros de cotizaciones, dos cotizaciones finalizadas con datos de prueba y el botón Nueva cotización." loading="lazy" decoding="async">
+                  </div>
+                  <figcaption>Vista real de una versión en desarrollo<br>Solo datos de prueba</figcaption>
+                </figure>
+              </article>
+
+              <article class="app-card" id="slide-empleame" role="tabpanel" aria-labelledby="empleame-title">
+                <div class="app-copy">
+                  <div class="app-heading">
+                    <img class="app-icon" src="/assets/xanders/empleame-icon.png" width="64" height="64" alt="" loading="lazy" decoding="async">
+                    <div>
+                      <p class="app-platform">Productividad profesional en Android e iOS</p>
+                      <h3 id="empleame-title">Empleame CV</h3>
+                    </div>
+                  </div>
+                  <p class="status"><span aria-hidden="true"></span> En desarrollo</p>
+                  <h4>Tu currículum,<br>listo en minutos.</h4>
+                  <p class="app-description">Crea, personaliza y exporta tu currículum vitae profesional en PDF desde tu móvil. Trabaja sin conexión, elige entre plantillas editoriales y adjunta tus certificados.</p>
+                  <ul class="app-features">
+                    <li><span aria-hidden="true"></span> 7 plantillas editoriales y paletas personalizables</li>
+                    <li><span aria-hidden="true"></span> Importa un PDF existente o edita por secciones</li>
+                    <li><span aria-hidden="true"></span> Exporta, imprime y comparte en PDF de alta fidelidad</li>
+                  </ul>
+                  <p class="availability">Estamos preparando su publicación. Aquí encontrarás el enlace a Google Play cuando esté disponible.</p>
+                  <a class="text-link" href="/empleame/privacidad/">Privacidad de Empleame CV</a>
+                </div>
+
+                <figure class="app-preview">
+                  <div class="preview-grid" aria-hidden="true"></div>
+                  <div class="phone-frame">
+                    <div class="phone-screen-mockup" aria-label="Vista ilustrativa de Empleame CV: lista de currículums y vista previa de plantilla profesional.">
+                      <div class="mockup-statusbar">
+                        <span>9:41</span>
+                        <span class="mockup-pill"></span>
+                      </div>
+                      <div class="mockup-appbar">
+                        <span>Mis Currículums</span>
+                        <span class="mockup-badge">PDF</span>
+                      </div>
+                      <div class="mockup-card">
+                        <div class="mockup-cv-header">
+                          <span class="mockup-avatar">SM</span>
+                          <div>
+                            <strong>Sofía Mendoza</strong>
+                            <span>Diseñadora UX · Madrid</span>
+                          </div>
+                        </div>
+                        <div class="mockup-lines">
+                          <span></span>
+                          <span></span>
+                          <span class="short"></span>
+                        </div>
+                        <div class="mockup-chips">
+                          <span>Corporativo</span>
+                          <span>PDF listo</span>
+                        </div>
+                      </div>
+                      <div class="mockup-card muted">
+                        <div class="mockup-cv-header">
+                          <span class="mockup-avatar alt">CV</span>
+                          <div>
+                            <strong>CV Técnico</strong>
+                            <span>Plantilla Minimalista</span>
+                          </div>
+                        </div>
+                        <div class="mockup-lines">
+                          <span></span>
+                          <span class="short"></span>
+                        </div>
+                      </div>
+                      <div class="mockup-fab" aria-hidden="true">+</div>
+                    </div>
+                  </div>
+                  <figcaption>Vista ilustrativa de Empleame CV<br>Solo datos ficticios</figcaption>
+                </figure>
+              </article>
             </div>
-            <figcaption>Vista real de una versión en desarrollo<br>Solo datos de prueba</figcaption>
-          </figure>
-        </article>
+          </div>
+        </div>
       </section>
 
       <section class="about-section section wrap" id="nosotros" aria-labelledby="about-title">
@@ -210,6 +309,76 @@ layout: null
         window.setTimeout(typeCharacter, 420);
 
 
+      }());
+
+      (function () {
+        var carousel = document.getElementById("apps-carousel");
+        var track = document.getElementById("apps-track");
+        var toolbar = carousel ? carousel.querySelector(".carousel-toolbar") : null;
+        var tabs = carousel ? Array.from(carousel.querySelectorAll(".carousel-tab")) : [];
+        var slides = track ? Array.from(track.querySelectorAll(".app-card")) : [];
+        var prevBtn = document.getElementById("carousel-prev");
+        var nextBtn = document.getElementById("carousel-next");
+        var counter = document.getElementById("carousel-counter");
+
+        if (!carousel || !track || !toolbar || tabs.length === 0 || slides.length < 2) {
+          return;
+        }
+
+        var currentIndex = 0;
+        carousel.classList.add("is-carousel-ready");
+        toolbar.hidden = false;
+
+        function updateCarousel(nextIndex, focusTab) {
+          currentIndex = (nextIndex + slides.length) % slides.length;
+          track.style.transform = "translateX(-" + (currentIndex * 100) + "%)";
+
+          tabs.forEach(function (tab, idx) {
+            var isActive = idx === currentIndex;
+            tab.classList.toggle("is-active", isActive);
+            tab.setAttribute("aria-selected", isActive ? "true" : "false");
+            tab.tabIndex = isActive ? 0 : -1;
+            if (isActive && focusTab) {
+              tab.focus();
+            }
+          });
+
+          slides.forEach(function (slide, idx) {
+            slide.setAttribute("aria-hidden", idx === currentIndex ? "false" : "true");
+          });
+
+          if (counter) {
+            counter.textContent = (currentIndex + 1) + " / " + slides.length;
+          }
+        }
+
+        tabs.forEach(function (tab, idx) {
+          tab.addEventListener("click", function () {
+            updateCarousel(idx, false);
+          });
+          tab.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowRight") {
+              event.preventDefault();
+              updateCarousel(idx + 1, true);
+            } else if (event.key === "ArrowLeft") {
+              event.preventDefault();
+              updateCarousel(idx - 1, true);
+            }
+          });
+        });
+
+        if (prevBtn) {
+          prevBtn.addEventListener("click", function () {
+            updateCarousel(currentIndex - 1, false);
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener("click", function () {
+            updateCarousel(currentIndex + 1, false);
+          });
+        }
+
+        updateCarousel(0, false);
       }());
     </script>
 
