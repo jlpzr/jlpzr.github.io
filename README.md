@@ -13,8 +13,10 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
   teclado y `prefers-reduced-motion`. La animación se concentra en la entrada de la
   portada, el símbolo de marca y el titular de escritura progresiva.
 - `assets/xanders/`: logotipo vectorial, favicon y dos imágenes WebP.
-- `privacidad/index.html`: índice de políticas de privacidad de las aplicaciones.
+- `privacidad/index.html`: índice de políticas de privacidad de las aplicaciones y declaración de Google AdSense y cookies del sitio `xanders.me`.
 - `cotizame/privacidad/index.html`: política de privacidad de Cotizame.
+- `empleame/privacidad/index.html`: política de privacidad de Empleame CV.
+- `ads.txt`: autorización de vendedor digital para Google AdSense (`pub-8988382520776546`).
 - `CHANGELOG.md`: registro interno de cambios, excluido de la salida de Jekyll por `_config.yml`.
 - `googleeb36ee55bdb6964e.html`: archivo de propiedad de Search Console.
 - `CNAME`: dominio `xanders.me`.
