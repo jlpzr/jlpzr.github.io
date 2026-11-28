@@ -3,6 +3,12 @@
 Registro interno de cambios del repositorio. Este archivo se excluye del sitio
 generado y no forma parte de las páginas publicadas.
 
+## 2026-11-27
+
+- Se añadió el menú desplegable “Apps” con acceso al centro de Cotizame.
+- Se creó `/apps/cotizame/` con secciones para noticias, documentación y descargas
+  de plantillas, marcadas como próximas mientras se prepara su contenido.
+
 ## 2026-11-17
 
 - Se añadió una animación de parpadeo al guion bajo del logo, respetando la

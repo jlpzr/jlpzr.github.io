@@ -8,6 +8,8 @@ de aplicaciones, publicada con GitHub Pages desde `main`.
 - `index.html`: inicio, aplicaciones, sobre Xanders y contacto. Jekyll procesa su
   front matter con `layout: null` e incluye el código existente de AdSense desde
   `_includes/head-custom.html`.
+- `apps/cotizame/index.html`: centro de Cotizame con secciones preparadas para
+  noticias, documentación y descargas de plantillas.
 - `assets/xanders/site.css`: diseño adaptable, azul medianoche y acento lima,
   titulares editoriales en Georgia, cuerpo en fuentes del sistema, navegación por
   teclado y `prefers-reduced-motion`. La animación se concentra en la entrada de la

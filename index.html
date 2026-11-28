@@ -16,7 +16,7 @@ layout: null
     <meta property="og:url" content="https://xanders.me/">
     <link rel="canonical" href="https://xanders.me/">
     <link rel="icon" href="/assets/xanders/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/xanders/site.css?v=8">
+    <link rel="stylesheet" href="/assets/xanders/site.css?v=9">
     <title>Xanders — Ideas que toman forma de app</title>
     {% include head-custom.html %}
   </head>
@@ -29,7 +29,13 @@ layout: null
         <span>Xanders<span class="brand-dot">.</span></span>
       </a>
       <nav aria-label="Navegación principal">
-        <a href="#aplicaciones">Aplicaciones</a>
+        <details class="nav-dropdown">
+          <summary>Apps</summary>
+          <div class="nav-dropdown-menu">
+            <a href="/#aplicaciones">Todas las apps</a>
+            <a href="/apps/cotizame/">Cotizame</a>
+          </div>
+        </details>
         <a href="#nosotros">Sobre Xanders</a>
         <a href="/privacidad/">Privacidad</a>
         <a class="nav-contact" href="#contacto">Hablemos</a>
@@ -112,6 +118,7 @@ layout: null
                     <li><span aria-hidden="true"></span> Protege tus respaldos con contraseña</li>
                   </ul>
                   <p class="availability">Estamos preparando su publicación. Aquí encontrarás el enlace a Google Play cuando esté disponible.</p>
+                  <a class="text-link" href="/apps/cotizame/">Noticias, documentación y plantillas</a>
                   <a class="text-link" href="/cotizame/privacidad/">Privacidad de Cotizame</a>
                 </div>
 
